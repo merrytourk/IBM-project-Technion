@@ -1,0 +1,200 @@
+test: generating a pseudo-random pauli using the tables - 1 qubit - seed=0:
+[]
+test: inverting a pseudo-random pauli using the tables - 1 qubit - seed=0:
+[]
+-------------------------------------------------------
+test: generating a pseudo-random pauli using the tables - 1 qubit - seed=1:
+['z 0']
+test: inverting a pseudo-random pauli using the tables - 1 qubit - seed=1:
+['z 0']
+-------------------------------------------------------
+test: generating a pseudo-random pauli using the tables - 1 qubit - seed=2:
+[]
+test: inverting a pseudo-random pauli using the tables - 1 qubit - seed=2:
+[]
+-------------------------------------------------------
+test: generating a pseudo-random pauli using the tables - 1 qubit - seed=3:
+['x 0']
+test: inverting a pseudo-random pauli using the tables - 1 qubit - seed=3:
+['x 0']
+-------------------------------------------------------
+test: generating a pseudo-random pauli using the tables - 1 qubit - seed=4:
+['x 0']
+test: inverting a pseudo-random pauli using the tables - 1 qubit - seed=4:
+['x 0']
+-------------------------------------------------------
+test: generating a pseudo-random pauli using the tables - 1 qubit - seed=5:
+['y 0']
+test: inverting a pseudo-random pauli using the tables - 1 qubit - seed=5:
+['y 0']
+-------------------------------------------------------
+test: generating a pseudo-random pauli using the tables - 1 qubit - seed=6:
+['x 0']
+test: inverting a pseudo-random pauli using the tables - 1 qubit - seed=6:
+['x 0']
+-------------------------------------------------------
+test: generating a pseudo-random pauli using the tables - 1 qubit - seed=7:
+['y 0']
+test: inverting a pseudo-random pauli using the tables - 1 qubit - seed=7:
+['y 0']
+-------------------------------------------------------
+test: generating a pseudo-random pauli using the tables - 1 qubit - seed=8:
+['y 0']
+test: inverting a pseudo-random pauli using the tables - 1 qubit - seed=8:
+['y 0']
+-------------------------------------------------------
+test: generating a pseudo-random pauli using the tables - 1 qubit - seed=9:
+['x 0']
+test: inverting a pseudo-random pauli using the tables - 1 qubit - seed=9:
+['x 0']
+-------------------------------------------------------
+test: generating a pseudo-random pauli using the tables - 1 qubit - seed=10:
+['z 0']
+test: inverting a pseudo-random pauli using the tables - 1 qubit - seed=10:
+['z 0']
+-------------------------------------------------------
+test: generating a pseudo-random pauli using the tables - 1 qubit - seed=11:
+['z 0']
+test: inverting a pseudo-random pauli using the tables - 1 qubit - seed=11:
+['z 0']
+-------------------------------------------------------
+test: generating a pseudo-random pauli using the tables - 1 qubit - seed=12:
+['y 0']
+test: inverting a pseudo-random pauli using the tables - 1 qubit - seed=12:
+['y 0']
+-------------------------------------------------------
+test: generating a pseudo-random pauli using the tables - 1 qubit - seed=13:
+['x 0']
+test: inverting a pseudo-random pauli using the tables - 1 qubit - seed=13:
+['x 0']
+-------------------------------------------------------
+test: generating a pseudo-random pauli using the tables - 1 qubit - seed=14:
+['y 0']
+test: inverting a pseudo-random pauli using the tables - 1 qubit - seed=14:
+['y 0']
+-------------------------------------------------------
+test: generating a pseudo-random pauli using the tables - 1 qubit - seed=15:
+[]
+test: inverting a pseudo-random pauli using the tables - 1 qubit - seed=15:
+[]
+-------------------------------------------------------
+test: generating a pseudo-random pauli using the tables - 1 qubit - seed=16:
+['z 0']
+test: inverting a pseudo-random pauli using the tables - 1 qubit - seed=16:
+['z 0']
+-------------------------------------------------------
+test: generating a pseudo-random pauli using the tables - 1 qubit - seed=17:
+['y 0']
+test: inverting a pseudo-random pauli using the tables - 1 qubit - seed=17:
+['y 0']
+-------------------------------------------------------
+test: generating a pseudo-random pauli using the tables - 1 qubit - seed=18:
+['x 0']
+test: inverting a pseudo-random pauli using the tables - 1 qubit - seed=18:
+['x 0']
+-------------------------------------------------------
+test: generating a pseudo-random pauli using the tables - 1 qubit - seed=19:
+['z 0']
+test: inverting a pseudo-random pauli using the tables - 1 qubit - seed=19:
+['z 0']
+-------------------------------------------------------
+test: generating a pseudo-random pauli using the tables - 2 qubit - seed=0:
+['y 1']
+test: inverting a pseudo-random pauli using the tables - 2 qubit - seed=0:
+['y 1']
+-------------------------------------------------------
+test: generating a pseudo-random pauli using the tables - 2 qubit - seed=1:
+['z 0', 'z 1']
+test: inverting a pseudo-random pauli using the tables - 2 qubit - seed=1:
+['z 1', 'z 0']
+-------------------------------------------------------
+test: generating a pseudo-random pauli using the tables - 2 qubit - seed=2:
+['x 1']
+test: inverting a pseudo-random pauli using the tables - 2 qubit - seed=2:
+['x 1']
+-------------------------------------------------------
+test: generating a pseudo-random pauli using the tables - 2 qubit - seed=3:
+['x 0', 'x 1']
+test: inverting a pseudo-random pauli using the tables - 2 qubit - seed=3:
+['x 1', 'x 0']
+-------------------------------------------------------
+test: generating a pseudo-random pauli using the tables - 2 qubit - seed=4:
+['x 0', 'x 1']
+test: inverting a pseudo-random pauli using the tables - 2 qubit - seed=4:
+['x 1', 'x 0']
+-------------------------------------------------------
+test: generating a pseudo-random pauli using the tables - 2 qubit - seed=5:
+['y 0']
+test: inverting a pseudo-random pauli using the tables - 2 qubit - seed=5:
+['y 0']
+-------------------------------------------------------
+test: generating a pseudo-random pauli using the tables - 2 qubit - seed=6:
+['x 0', 'x 1']
+test: inverting a pseudo-random pauli using the tables - 2 qubit - seed=6:
+['x 1', 'x 0']
+-------------------------------------------------------
+test: generating a pseudo-random pauli using the tables - 2 qubit - seed=7:
+['y 0', 'y 1']
+test: inverting a pseudo-random pauli using the tables - 2 qubit - seed=7:
+['y 1', 'y 0']
+-------------------------------------------------------
+test: generating a pseudo-random pauli using the tables - 2 qubit - seed=8:
+['y 0']
+test: inverting a pseudo-random pauli using the tables - 2 qubit - seed=8:
+['y 0']
+-------------------------------------------------------
+test: generating a pseudo-random pauli using the tables - 2 qubit - seed=9:
+['x 0', 'y 1']
+test: inverting a pseudo-random pauli using the tables - 2 qubit - seed=9:
+['y 1', 'x 0']
+-------------------------------------------------------
+test: generating a pseudo-random pauli using the tables - 2 qubit - seed=10:
+['z 0', 'x 1']
+test: inverting a pseudo-random pauli using the tables - 2 qubit - seed=10:
+['x 1', 'z 0']
+-------------------------------------------------------
+test: generating a pseudo-random pauli using the tables - 2 qubit - seed=11:
+['z 0', 'x 1']
+test: inverting a pseudo-random pauli using the tables - 2 qubit - seed=11:
+['x 1', 'z 0']
+-------------------------------------------------------
+test: generating a pseudo-random pauli using the tables - 2 qubit - seed=12:
+['y 0', 'x 1']
+test: inverting a pseudo-random pauli using the tables - 2 qubit - seed=12:
+['x 1', 'y 0']
+-------------------------------------------------------
+test: generating a pseudo-random pauli using the tables - 2 qubit - seed=13:
+['x 0']
+test: inverting a pseudo-random pauli using the tables - 2 qubit - seed=13:
+['x 0']
+-------------------------------------------------------
+test: generating a pseudo-random pauli using the tables - 2 qubit - seed=14:
+['y 0', 'x 1']
+test: inverting a pseudo-random pauli using the tables - 2 qubit - seed=14:
+['x 1', 'y 0']
+-------------------------------------------------------
+test: generating a pseudo-random pauli using the tables - 2 qubit - seed=15:
+['x 1']
+test: inverting a pseudo-random pauli using the tables - 2 qubit - seed=15:
+['x 1']
+-------------------------------------------------------
+test: generating a pseudo-random pauli using the tables - 2 qubit - seed=16:
+['z 0', 'x 1']
+test: inverting a pseudo-random pauli using the tables - 2 qubit - seed=16:
+['x 1', 'z 0']
+-------------------------------------------------------
+test: generating a pseudo-random pauli using the tables - 2 qubit - seed=17:
+['y 0', 'y 1']
+test: inverting a pseudo-random pauli using the tables - 2 qubit - seed=17:
+['y 1', 'y 0']
+-------------------------------------------------------
+test: generating a pseudo-random pauli using the tables - 2 qubit - seed=18:
+['x 0', 'x 1']
+test: inverting a pseudo-random pauli using the tables - 2 qubit - seed=18:
+['x 1', 'x 0']
+-------------------------------------------------------
+test: generating a pseudo-random pauli using the tables - 2 qubit - seed=19:
+['z 0', 'y 1']
+test: inverting a pseudo-random pauli using the tables - 2 qubit - seed=19:
+['y 1', 'z 0']
+-------------------------------------------------------

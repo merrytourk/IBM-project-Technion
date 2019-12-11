@@ -1,0 +1,100 @@
+test: generating a pseudo-random CNOTpauli using the tables - 2 qubit - seed=0:
+['cx 0 1', 'cx 1 0', 'y 1']
+test: inverting a pseudo-random CNOTpauli using the tables - 2 qubit - seed=0:
+['y 1', 'cx 1 0', 'cx 0 1']
+-------------------------------------------------------
+test: generating a pseudo-random CNOTpauli using the tables - 2 qubit - seed=1:
+['cx 0 1', 'cx 1 0', 'z 0', 'z 1']
+test: inverting a pseudo-random CNOTpauli using the tables - 2 qubit - seed=1:
+['z 1', 'z 0', 'cx 1 0', 'cx 0 1']
+-------------------------------------------------------
+test: generating a pseudo-random CNOTpauli using the tables - 2 qubit - seed=2:
+['cx 0 1', 'cx 1 0', 'x 1']
+test: inverting a pseudo-random CNOTpauli using the tables - 2 qubit - seed=2:
+['x 1', 'cx 1 0', 'cx 0 1']
+-------------------------------------------------------
+test: generating a pseudo-random CNOTpauli using the tables - 2 qubit - seed=3:
+['cx 0 1', 'cx 1 0', 'x 0', 'x 1']
+test: inverting a pseudo-random CNOTpauli using the tables - 2 qubit - seed=3:
+['x 1', 'x 0', 'cx 1 0', 'cx 0 1']
+-------------------------------------------------------
+test: generating a pseudo-random CNOTpauli using the tables - 2 qubit - seed=4:
+['cx 0 1', 'cx 1 0', 'cx 0 1', 'x 0', 'x 1']
+test: inverting a pseudo-random CNOTpauli using the tables - 2 qubit - seed=4:
+['x 1', 'x 0', 'cx 0 1', 'cx 1 0', 'cx 0 1']
+-------------------------------------------------------
+test: generating a pseudo-random CNOTpauli using the tables - 2 qubit - seed=5:
+['cx 0 1', 'cx 1 0', 'y 0']
+test: inverting a pseudo-random CNOTpauli using the tables - 2 qubit - seed=5:
+['y 0', 'cx 1 0', 'cx 0 1']
+-------------------------------------------------------
+test: generating a pseudo-random CNOTpauli using the tables - 2 qubit - seed=6:
+['x 0', 'x 1']
+test: inverting a pseudo-random CNOTpauli using the tables - 2 qubit - seed=6:
+['x 1', 'x 0']
+-------------------------------------------------------
+test: generating a pseudo-random CNOTpauli using the tables - 2 qubit - seed=7:
+['cx 0 1', 'cx 1 0', 'y 0', 'y 1']
+test: inverting a pseudo-random CNOTpauli using the tables - 2 qubit - seed=7:
+['y 1', 'y 0', 'cx 1 0', 'cx 0 1']
+-------------------------------------------------------
+test: generating a pseudo-random CNOTpauli using the tables - 2 qubit - seed=8:
+['y 0']
+test: inverting a pseudo-random CNOTpauli using the tables - 2 qubit - seed=8:
+['y 0']
+-------------------------------------------------------
+test: generating a pseudo-random CNOTpauli using the tables - 2 qubit - seed=9:
+['cx 0 1', 'cx 1 0', 'cx 0 1', 'x 0', 'y 1']
+test: inverting a pseudo-random CNOTpauli using the tables - 2 qubit - seed=9:
+['y 1', 'x 0', 'cx 0 1', 'cx 1 0', 'cx 0 1']
+-------------------------------------------------------
+test: generating a pseudo-random CNOTpauli using the tables - 2 qubit - seed=10:
+['z 0', 'x 1']
+test: inverting a pseudo-random CNOTpauli using the tables - 2 qubit - seed=10:
+['x 1', 'z 0']
+-------------------------------------------------------
+test: generating a pseudo-random CNOTpauli using the tables - 2 qubit - seed=11:
+['cx 0 1', 'z 0', 'x 1']
+test: inverting a pseudo-random CNOTpauli using the tables - 2 qubit - seed=11:
+['x 1', 'z 0', 'cx 0 1']
+-------------------------------------------------------
+test: generating a pseudo-random CNOTpauli using the tables - 2 qubit - seed=12:
+['y 0', 'x 1']
+test: inverting a pseudo-random CNOTpauli using the tables - 2 qubit - seed=12:
+['x 1', 'y 0']
+-------------------------------------------------------
+test: generating a pseudo-random CNOTpauli using the tables - 2 qubit - seed=13:
+['cx 0 1', 'x 0']
+test: inverting a pseudo-random CNOTpauli using the tables - 2 qubit - seed=13:
+['x 0', 'cx 0 1']
+-------------------------------------------------------
+test: generating a pseudo-random CNOTpauli using the tables - 2 qubit - seed=14:
+['cx 0 1', 'cx 1 0', 'y 0', 'x 1']
+test: inverting a pseudo-random CNOTpauli using the tables - 2 qubit - seed=14:
+['x 1', 'y 0', 'cx 1 0', 'cx 0 1']
+-------------------------------------------------------
+test: generating a pseudo-random CNOTpauli using the tables - 2 qubit - seed=15:
+['x 1']
+test: inverting a pseudo-random CNOTpauli using the tables - 2 qubit - seed=15:
+['x 1']
+-------------------------------------------------------
+test: generating a pseudo-random CNOTpauli using the tables - 2 qubit - seed=16:
+['cx 0 1', 'cx 1 0', 'z 0', 'x 1']
+test: inverting a pseudo-random CNOTpauli using the tables - 2 qubit - seed=16:
+['x 1', 'z 0', 'cx 1 0', 'cx 0 1']
+-------------------------------------------------------
+test: generating a pseudo-random CNOTpauli using the tables - 2 qubit - seed=17:
+['cx 0 1', 'cx 1 0', 'y 0', 'y 1']
+test: inverting a pseudo-random CNOTpauli using the tables - 2 qubit - seed=17:
+['y 1', 'y 0', 'cx 1 0', 'cx 0 1']
+-------------------------------------------------------
+test: generating a pseudo-random CNOTpauli using the tables - 2 qubit - seed=18:
+['cx 0 1', 'cx 1 0', 'x 0', 'x 1']
+test: inverting a pseudo-random CNOTpauli using the tables - 2 qubit - seed=18:
+['x 1', 'x 0', 'cx 1 0', 'cx 0 1']
+-------------------------------------------------------
+test: generating a pseudo-random CNOTpauli using the tables - 2 qubit - seed=19:
+['cx 0 1', 'z 0', 'y 1']
+test: inverting a pseudo-random CNOTpauli using the tables - 2 qubit - seed=19:
+['y 1', 'z 0', 'cx 0 1']
+-------------------------------------------------------
