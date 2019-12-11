@@ -182,12 +182,12 @@ def randomized_benchmarking_seq(nseeds=1, length_vector=None,
     if group_gates is None or 'Clifford' or 'clifford':
         Gutils = clutils()
         Ggroup = Clifford
-	elif group_gates is 'Pauli' or 'pauli':
-	    Gutils = plutils()
-        Ggroup = Clifford
-	elif group_gates is 'CNOTPauli' or 'CNOTpauli':
-	    Gutils = CNOTplutils()
-        Ggroup = Clifford
+    elif group_gates is 'Pauli' or 'pauli':
+       Gutils = plutils()
+       Ggroup = Clifford
+    elif group_gates is 'CNOTPauli' or 'CNOTpauli':
+       Gutils = CNOTplutils()
+       Ggroup = Clifford
     else:
         raise ValueError("Unknown group or set of gates.")
 
