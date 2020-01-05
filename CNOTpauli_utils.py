@@ -1,8 +1,11 @@
-
+"""
+import numpy as np
+from Clifford import Clifford
+from basic_utils import BasicUtils
+"""
 import numpy as np
 from .Clifford import Clifford
 from .basic_utils import BasicUtils
-
 
 
 
@@ -111,38 +114,20 @@ class CNOTPauliUtils(BasicUtils):
         gatelist.append('cx ' + str(ctrl) + ' ' + str(tgt))
 
     # --------------------------------------------------------
-    # Create a 1 or 2 Qubit CNOTPauli based on a unique index
+    # Create a 2 Qubit CNOTPauli based on a unique index
     # --------------------------------------------------------
-
-    def CNOTPauli1_gates(self, idx: int):
-        """
-        Make a single qubit CNOTPauli gate.
-        Args:
-            idx: the index (mod 4) of a single qubit CNOTPauli.
-        Returns:
-            A single qubit CNOTPauli gate.
-        """
-
-        gatelist = []
-        # Cannonical Ordering of CNOTPauli 0,...,4
-        cannonicalorder = idx % 4
-        pauli = np.mod(cannonicalorder, 4)
-
-        self.pauli_gates(gatelist, 0, pauli)
-
-        return gatelist
 
     def CNOTPauli2_gates(self, idx: int):
         """
         Make a 2-qubit CNOTPauli gate.
         Args:
-            idx: the index (mod 64) of a two-qubit CNOTPauli.
+            idx: the index (mod 96) of a two-qubit CNOTPauli.
         Returns:
             A 2-qubit CNOTPauli gate.
         """
 
         gatelist = []
-        cannon = idx % 64
+        cannon = idx % 96
 
         pauli = np.mod(cannon, 16)
         symp = cannon
@@ -151,13 +136,21 @@ class CNOTPauliUtils(BasicUtils):
             self.cx_gates(gatelist, 0, 1)
            
         elif symp >= 32 and symp < 48:            
+            self.cx_gates(gatelist, 1, 0)
+
+        elif symp >= 48 and symp < 64:            
             self.cx_gates(gatelist, 0, 1)
             self.cx_gates(gatelist, 1, 0)
-           
-        elif symp >= 48 and symp < 64:          
+
+        elif symp >= 64 and symp < 80:            
+            self.cx_gates(gatelist, 1, 0)
+            self.cx_gates(gatelist, 0, 1)
+
+        elif symp >= 80 and symp < 96:          
             self.cx_gates(gatelist, 0, 1)
             self.cx_gates(gatelist, 1, 0)
             self.cx_gates(gatelist, 0, 1)
+
 
         self.pauli_gates(gatelist, 0, np.mod(pauli, 4))
         self.pauli_gates(gatelist, 1, pauli // 4)
@@ -165,7 +158,7 @@ class CNOTPauliUtils(BasicUtils):
         return gatelist
 
     # --------------------------------------------------------
-    # Create a 1 or 2 Qubit CNOTPauli tables
+    # Create a 2 Qubit CNOTPauli tables
     # --------------------------------------------------------
     def CNOTPauli2_gates_table(self):
         """
@@ -176,39 +169,11 @@ class CNOTPauliUtils(BasicUtils):
             A table of all 2-qubit CNOTPauli gates.
         """
         cnotPauli2 = {}
-        for i in range(64):
+        for i in range(96):
             circ = self.CNOTPauli2_gates(i)
             key = self.CNOTPauli_from_gates(2, circ).index()
             cnotPauli2[key] = circ
         return cnotPauli2
-
-    def CNOTPauli1_gates_table(self):
-        """
-        Generate a table of all 1-qubit CNOTPauli gates.
-        Args:
-            None.
-        Returns:
-            A table of all 1-qubit CNOTPauli gates.
-        """
-        cnotPauli1 = {}
-        for i in range(4):
-            circ = self.CNOTPauli1_gates(i)
-            key = self.CNOTPauli_from_gates(1, circ).index()
-            cnotPauli1[key] = circ
-        return cnotPauli1
-
-   
-    def load_clifford_table(self, picklefile='cliffords2.pickle'):
-        """
-        Load pickled files of the tables of 1 and 2 qubit Clifford tables.
-        Args:
-            picklefile: pickle file name.
-        Returns:
-            A table of 1 and 2 qubit Clifford gates.
-        """
-        with open(picklefile, "rb") as pf:
-            return pickle.load(pf)
-        pf.close()
 
     def load_tables(self, num_qubits):
         """
@@ -221,14 +186,12 @@ class CNOTPauliUtils(BasicUtils):
 
         # load the cnotPauli tables, but only if we're using that particular
         # num_qubits
-        if num_qubits == 1:
-            # 1Q Cliffords, load table programmatically
-            cnotPauli_tables = self.CNOTPauli1_gates_table()
-
-        elif num_qubits == 2:
+        
+        if num_qubits == 2:
             # 2Q Cliffords, load table programmatically
             cnotPauli_tables = self.CNOTPauli2_gates_table()
-
+        else:
+            raise ValueError("The number of qubits should be only 2")
            
         self._group_tables = cnotPauli_tables
         return cnotPauli_tables
@@ -242,15 +205,13 @@ class CNOTPauliUtils(BasicUtils):
         Args:
             num_qubits: dimension of the CNOTPauli.
         Returns:
-            A 1 or 2 qubit CNOTPauli gate.
+            A 2 qubit CNOTPauli gate.
         """
 
-        if num_qubits == 1:
-            paul_gatelist = self.CNOTPauli1_gates(np.random.randint(0, 4))
-        elif num_qubits == 2:
-            paul_gatelist = self.CNOTPauli2_gates(np.random.randint(0, 64))
+        if num_qubits == 2:
+            paul_gatelist = self.CNOTPauli2_gates(np.random.randint(0, 96))
         else:
-            raise ValueError("The number of qubits should be only 1 or 2")
+            raise ValueError("The number of qubits should be only 2")
 
         self._gatelist = paul_gatelist
         return paul_gatelist
@@ -268,11 +229,11 @@ class CNOTPauliUtils(BasicUtils):
             An inverse CNOTPauli gate.
         """
 
-        if num_qubits in (1, 2):
+        if num_qubits == 2:
             inv_gatelist = gatelist.copy()
             inv_gatelist.reverse()
             return inv_gatelist
-        raise ValueError("The number of qubits should be only 1 or 2")
+        raise ValueError("The number of qubits should be only 2")
 
     def find_key(self, paul, num_qubits):
         """
